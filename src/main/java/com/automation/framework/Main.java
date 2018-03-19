@@ -37,7 +37,7 @@ public class Main
 	 * 
 	 */
 	@BeforeSuite
-	public void beforeClass() {
+	public void beforeSuite() {
 		
 		initializeTestReport();
 		getUserPreferences();
@@ -49,7 +49,7 @@ public class Main
 	 * 
 	 */
 	@AfterSuite
-	public void afterClass() {
+	public void afterSuite() {
 		
 		if(webDriver!=null) {
 			webDriver.quit();
